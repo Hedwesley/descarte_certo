@@ -4,7 +4,7 @@ function verificarLoginAntesDeAcessar(url) {
       window.location.href = url;
     } else {
       alert("Faça login para acessar esta funcionalidade.");
-      window.location.href = "/Pages/login.html?msg=loginNecessario";
+      window.location.href = "/login.html?msg=loginNecessario";
 
     }
 }
