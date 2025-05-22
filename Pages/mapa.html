@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descarte Certo - Mapa</title>
+    <link rel="stylesheet" href="/Css/mapa.css" />
+    <link rel="icon" type="image/png" href="../imgs/faviconDC.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <a href="/Pages/index.html" class="logo-link">
+        <div class="logo">
+          <span class="logo-circle">DC</span>
+          <span class="logo-text">Descarte Certo</span>
+        </div>
+      </a>
+      <nav class="menu">
+        <a href="/Pages/index.html">Início</a>
+        <a href="/Pages/mapa.html">Mapa</a>
+        <a href="/Pages/denuncias.html">Denúncias</a>
+        <a href="/Pages/educativo.html">Educativo</a>
+        <a href="/Pages/quemsomos.html">Quem Somos</a>
+      </nav>
+      <div class="auth-buttons" id="auth-area">
+        <button
+          onclick="window.location.href='/Pages/login.html'"
+          class="login"
+        >
+          Entrar
+        </button>
+        <button
+          onclick="window.location.href='/Pages/cadastro.html'"
+          class="signup"
+        >
+          Cadastre-se
+        </button>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section class="mapa-section">
+        <h2>Mapa de Ecopontos</h2>
+        <p>Visualize os pontos de descarte correto em São Luis, MA:</p>
+        <div id="mapa"></div>
+      </section>
+      <section class="lista-ecopontos">
+        <h2>Lista de Ecopontos</h2>
+        <ul id="lista-ecopontos"></ul>
+      </section>
+    
+      <section class="info-ecopontos">
+        <h2>Informações Importantes</h2>
+        <p>
+          <strong>Horário de funcionamento:</strong> Segunda-feira a sábado, das
+          7h às 19h.
+        </p>
+        <p>
+          <strong>Serviços:</strong> Os Ecopontos de São Luís recebem os
+          seguintes tipos de resíduos por pessoa:
+        </p>
+
+        <ul>
+          <li>
+            <strong>ELETRÔNICOS:</strong> até 3 unidades (TV, monitores, mouses,
+            etc.)*
+          </li>
+          <li>
+            <strong>ENTULHO:</strong> até 2m³ (resíduos da construção civil)*
+          </li>
+          <li><strong>MADEIRAS:</strong> até 2m³*</li>
+          <li><strong>ÓLEO DE COZINHA:</strong> até 6 litros*</li>
+          <li><strong>PNEUS:</strong> até 4 unidades*</li>
+          <li><strong>PODAS E RESTO DE CAPINA:</strong> até 2m³*</li>
+          <li>
+            <strong>RECICLÁVEIS:</strong> até 300 litros* (plástico, papel,
+            metais, vidro)
+          </li>
+          <li>
+            <strong>VOLUMOSOS:</strong> até 2 volumes* (sofás, colchões, móveis,
+            etc.)
+          </li>
+        </ul>
+
+        <p class="nota">
+          * Limites por pessoa por vez, segundo regulamentações da prefeitura. É
+          importante destacar que existem resíduos que não podem ser entregues
+          no Ecopontos. São eles: lixo doméstico, animais mortos, resíduos
+          hospitalares e resíduos contaminantes como pilhas, baterias, lâmpadas,
+          cartuchos de tonner, aparelhos celulares etc. O lixo doméstico é
+          aquele como louça, papel higiênico e fralda descartável, alimentos,
+          como vegetais e frutas, além de palitos de madeira e papéis
+          engordurados. Eles devem ser acondicionados em sacos plásticos bem
+          fechados e colocados na porta do domicílio apenas nos dias e horários
+          de coleta, para serem recolhidos pelos caminhões da coleta.
+        </p>
+      </section>
+    </main>
+    <!-- Rodapé -->
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <strong class="logo-text">Descarte Certo</strong>
+          <p>
+            Plataforma para descarte correto de resíduos e conscientização
+            ambiental.
+          </p>
+        </div>
+        <div class="footer-columns">
+          <div>
+            <strong>Navegação:</strong>
+            <nav class="footer-menu">
+              <a href="/Pages/index.html">Início</a>
+              <a href="/Pages/mapa.html">Mapa</a>
+              <a href="/Pages/denuncias.html">Denúncias</a>
+              <a href="/Pages/educativo.html">Área Educativa</a>
+              <a href="/Pages/quemsomos.html">Quem Somos</a>
+            </nav>
+          </div>
+
+          <div>
+            <strong>Recursos:</strong>
+            <p>Materiais Educativos</p>
+            <p>Programa de Incentivo</p>
+            <p>Parceiros</p>
+          </div>
+          <div>
+            <strong>Contato:</strong>
+            <p>contato@descartecerto.com.br</p>
+            <p>(00) 12345-6789</p>
+            <p class="fale-conosco">Fale conosco</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="/Js/script.js"></script>
+    <script src="/Js/autenticacao.js"></script>
+  </body>
+</html>
